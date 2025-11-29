@@ -17,6 +17,7 @@ def lambda_handler(event, context):
     print(df.head())
 
 
+
     print("Environment Variables:")
     defined_variables = ["ENV", "API_KEY", "LOG_LEVEL"]
 
