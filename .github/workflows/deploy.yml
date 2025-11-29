@@ -15,7 +15,6 @@ jobs:
       uses: actions/checkout@v3
 
 
-
     - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
@@ -73,7 +72,7 @@ jobs:
           aws lambda create-function \
             --function-name $FUNCTION_NAME \
             --runtime python3.11 \
-            --role arn:aws:iam::851725469799:role/service-role/test_function-role-k06sk5ka \
+            --role arn:aws:iam::705711146351:role/service-role/new_role \
             --handler app.lambda_handler \
             --timeout 300 \
             --zip-file fileb://lambda.zip \
