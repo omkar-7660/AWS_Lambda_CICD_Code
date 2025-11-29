@@ -12,6 +12,7 @@ def lambda_handler(event, context):
     data = response.json()
     
 
+
     df = pd.DataFrame(data)
     print(df.head())
 
