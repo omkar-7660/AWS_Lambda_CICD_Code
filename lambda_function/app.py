@@ -30,6 +30,3 @@ def lambda_handler(event, context):
             "body": "Lambda function executed successfully"
         }
 
-
-
-lambda_handler({}, {})
